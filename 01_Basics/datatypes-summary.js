@@ -29,8 +29,31 @@ let myObj = {
 }
 
 const myFunction = function() {
-    console.log("Hello World!");    
+    // console.log("Hello World!");    
 }
 
-console.log(typeof outsiteTemp);
+// console.log(typeof outsiteTemp);
 
+// ****************************************************************************
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myName = "Osama"
+
+let anotherName = myName
+anotherName = "Osamaa"
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    email:"Obinasghar@yahoo.com",
+    id: 123
+}
+
+let userTwo = userOne
+
+userTwo.email = "Osamabinasghar91@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
